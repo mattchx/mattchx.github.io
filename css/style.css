@@ -37,10 +37,10 @@
 /* General styles */
 
 /* endable this to add smooth scrolling */
-/*
+
 html {
     scroll-behavior: smooth;
- */
+}
 
 body {
     background: var(--clr-light);
