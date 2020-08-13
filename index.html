@@ -3,115 +3,141 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Matt's Portfolio Website</title>
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css"
-      integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc="
+    <!-- Dependencies -->
+    <script
+      src="https://kit.fontawesome.com/4445f79570.js"
       crossorigin="anonymous"
-    />
-
-    <!-- Update these with your own fonts -->
-    <link
-      href="https://fonts.googleapis.com/css?family=Source+Code+Pro:400,900|Source+Sans+Pro:300,900&display=swap"
-      rel="stylesheet"
-    />
-
+    ></script>
     <link rel="stylesheet" href="css/style.css" />
+    <title>Matt's Portfolio Website</title>
   </head>
   <body>
+    <!-- HEADER + NAVBAR -->
     <header>
-      <div class="logo">
-        <img src="img/mch-logo1.png" alt="" />
-      </div>
-      <button class="nav-toggle" aria-label="toggle navigation">
-        <span class="hamburger"></span>
-      </button>
-      <nav class="nav">
-        <ul class="nav__list">
-          <li class="nav__item"><a href="#home" class="nav__link">Home</a></li>
-          <li class="nav__item">
-            <a href="#services" class="nav__link">Services</a>
-          </li>
-          <li class="nav__item">
-            <a href="#about" class="nav__link">About me</a>
-          </li>
-          <li class="nav__item"><a href="#work" class="nav__link">Work</a></li>
-        </ul>
+      <nav class="navbar">
+        <div class="brand-title">
+          <!-- mch -->
+        </div>
+        <a href="#" class="hamburger toggle-button">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </a>
+        <div class="navbar-links">
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Services</a></li>
+            <li><a href="#work">Portfolio</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li>
+              <span id="dark-mode-toggle" class="dark-mode-toggle"
+                ><i class="fas fa-adjust"></i
+              ></span>
+            </li>
+          </ul>
+        </div>
       </nav>
     </header>
 
-    <!-- Introduction -->
+    <!-- INTRO -->
     <section class="intro" id="home">
-      <h1 class="section__title section__title--intro">
-        Hi, I am <strong>Matthew C</br>Henderson</strong>
-      </h1>
-      <p class="section__subtitle section__subtitle--intro">front end software engineer</p>
-      <img
-        src="img/profile-photo.png"
-        alt="a picture of Matt smiling"
-        class="intro__img"
-      />
-    </section>
-
-    <!-- My services -->
-    <section class="my-services" id="services">
-      <h2 class="section__title section__title--services">What I do</h2>
-      <div class="services">
-        <div class="service">
-          <h3>HTML + CSS</h3>
-          <p>
-            Develop and deploy websites using the basics and add features that provide style as well as function. I incorporate Applied Accessibility and Responsive Web Design Principles. Technologies include Bootstrap Flexbox, Grid, and SASS.
-          </p>
-        </div>
-        <!-- / service -->
-
-        <div class="service">
-          <h3>Javascript</h3>
-          <p>
-            The power of Javascript brings websites to life. Experienced in: ES6, Regular Expressions, Debugging, Data Structures, Algroitym Scripting, Object-Oriented Programming, and Functional Programming.
-          </p>
-        </div>
-        <!-- / service -->
-
-        <div class="service">
-          <h3>React + Material UI</h3>
-          <p>
-            React makes it easy to create interactive User Interfaces (UIs). The benefits of React include great performance, testability, and reusability. Material UI is a styling framework (based on Material Design Principles by Google) that provides a core for making beautiful apps with both speed and flexibility.           </p>
-          </p>
-          </div>
-        <!-- / service -->
+      <div class="section__title heading-primary">
+        <h2 class="heading-primary-hello">Hi, I am</h2>
+        <h2 class="heading-primary-name">Matthew C Henderson</h2>
       </div>
-      <!-- / services -->
-
-      <a href="#work" class="btn">My Work</a>
+      <h1 class="section-subtitle-intro animated-subtitle">
+        I build things for the web
+      </h1>
+      <div class="btn-container">
+        <a href="#about" class="btn btn-dark btn-animated">Learn more</a>
+      </div>
     </section>
 
-    <!-- About me -->
+    <!-- ABOUT -->
     <section class="about-me" id="about">
-      <h2 class="section__title section__title--about">Who I am</h2>
-      <p class="section__subtitle section__subtitle--about">
-        Designer, developer, & educator
-      </p>
+      <div class="about-me__grid">
+      <img
+        src="img/profile-photo.JPG"
+        alt="a picture of Matt smiling"
+        class="about-me__img"
+      />
+
+      <h3 class="section__title section__title--about">
+        Who I am
+      </h3>
+      <h2>Designer, developer, & educator</h2>
 
       <div class="about-me__body">
         <p>
-          Living in China for the 5 years has allowed me to grow, learn, and think in new ways that I would have never expected. I took that non-traditional route to learn how to program by completing freeCodeCamp's Web Design and Javascript certifications.
+          My aim is to help you fulfill your goals from
+          idea and conception to design and execution. No matter what, we will
+          make sure your project/concept becomes a reality.
         </p>
-        <p>
-          I specialized in the above-mentioned technologies but would happy to consider any project. My aim is to help you fulfill your goals from idea and conception to design and execution.  No matter what, we will make sure your project/concept becomes a reality.
-        </p>
+        <a href="#contact" class="btn btn-light btn-animated btn__about-resume"
+          >Download Resume</a
+        >
+        <a href="#contact" class="btn btn-dark btn-animated btn__about-portfolio">My Portfolio</a>
       </div>
+    </div>
+    </section>
 
-      <img
-        src="https://res.cloudinary.com/dhbcdmcr2/image/upload/c_fill,h_970,w_646/v1584778368/new-portfolio-site/site-images/fabian-grohs-PuxTq4DwUHE-unsplash_rmmuw6.jpg"
-        alt="Jane leaning against a bus"
-        class="about-me__img"
-      />
+    <!-- SKILLS-->
+    <section class="skills" id="skills">
+      <h2 class="section__title section__title--skills">Skills</h2>
+      <p class="section__subtitle section__subtitle--skills">
+        These are the technologies I use to build apps for the web:
+      </p>
+
+      <div class="skills-grid">
+        <!-- JAVASCRIPT -->
+        <div class="skill-item">
+          <img class="skill-img" src="img/javascript-logo1.png" alt="" />
+          <h3>Javascript</h3>
+          <p>
+            The power of Javascript brings websites to life: ES6, Regular
+            Expressions, Debugging, Data Structures, and Algorithm Scripting.
+          </p>
+        </div>
+        <div class="skill-item">
+          <img class="skill-img" src="img/react-logo-no-word.png" alt="" />
+          <h3>React</h3>
+          <p>
+            React makes it easy to create interactive User Interfaces (UIs). The
+            benefits of React include great performance, testability, and
+            reusability.
+          </p>
+        </div>
+        <!-- HTML & CSS -->
+        <div class="skill-item">
+          <img class="skill-img" src="img/css-and-html-logo.png" alt="" />
+          <h3>HTML + CSS</h3>
+          <p>
+            Develop and deploy websites using the basics and add features that
+            provide style as well as function. Technologies include Bootstrap,
+            Flexbox, Grid, and SASS.
+          </p>
+        </div>
+        <!-- 
+    <div class="skill"></div>
+    <div class="skill"></div>
+    <div class="skill"></div>
+    -->
+      </div>
+    </section>
+
+    <!-- CALL-TO-ACTION -->
+    <section class="call-to-action" id="call-to-action">
+      <span>
+        <h2 class="section__title section__title--cta">Let's work together</h2>
+        <p>
+          I'm available for full-time or freelance projects. <br />
+          Hire me and get your projects done.
+        </p>
+      </span>
+      <span>
+        <a href="#contact" class="btn btn-dark btn-cta">Hire Me</a>
+      </span>
     </section>
 
     <!-- My Work -->
@@ -123,44 +149,87 @@
 
       <div class="portfolio">
         <!-- Portfolio item 01: Calculator -->
-        <a href="https://naughty-almeida-e30cf8.netlify.com/" class="portfolio__item">
-          <img src="https://res.cloudinary.com/dhbcdmcr2/image/upload/c_fill,h_829,w_1376/v1584686918/new-portfolio-site/project-thumbnails/Screen_Shot_2020-03-20_at_14.21.16_vhha2v.png" alt="" class="portfolio__img" />
+        <a
+          href="https://naughty-almeida-e30cf8.netlify.com/"
+          class="portfolio__item"
+        >
+          <img
+            src="https://res.cloudinary.com/dhbcdmcr2/image/upload/c_fill,h_829,w_1376/v1584686918/new-portfolio-site/project-thumbnails/Screen_Shot_2020-03-20_at_14.21.16_vhha2v.png"
+            alt=""
+            class="portfolio__img"
+          />
         </a>
 
         <!-- Portfolio item 02: Drum Kit-->
-        <a href="https://awesome-panini-72107c.netlify.com/" class="portfolio__item">
-          <img src="https://res.cloudinary.com/dhbcdmcr2/image/upload/v1584775660/new-portfolio-site/project-thumbnails/Screen_Shot_2020-03-20_at_15.36.18_fgjgl0.png" alt="" class="portfolio__img" />
+        <a
+          href="https://awesome-panini-72107c.netlify.com/"
+          class="portfolio__item"
+        >
+          <img
+            src="https://res.cloudinary.com/dhbcdmcr2/image/upload/v1584775660/new-portfolio-site/project-thumbnails/Screen_Shot_2020-03-20_at_15.36.18_fgjgl0.png"
+            alt=""
+            class="portfolio__img"
+          />
         </a>
 
         <!-- Portfolio item 03: Mult-step form -->
-        <a href="https://eager-jennings-0fc4c6.netlify.com/" class="portfolio__item">
-          <img src="https://res.cloudinary.com/dhbcdmcr2/image/upload/c_fill,h_829,w_1376/v1584771206/new-portfolio-site/project-thumbnails/Screen_Shot_2020-03-20_at_20.54.38_j9glvr.png" alt="" class="portfolio__img" />
+        <a
+          href="https://eager-jennings-0fc4c6.netlify.com/"
+          class="portfolio__item"
+        >
+          <img
+            src="https://res.cloudinary.com/dhbcdmcr2/image/upload/c_fill,h_829,w_1376/v1584771206/new-portfolio-site/project-thumbnails/Screen_Shot_2020-03-20_at_20.54.38_j9glvr.png"
+            alt=""
+            class="portfolio__img"
+          />
         </a>
 
         <!-- Portfolio item 04: Random quote gen -->
-        <a href="https://compassionate-dubinsky-cb7490.netlify.com/" class="portfolio__item">
-          <img src="https://res.cloudinary.com/dhbcdmcr2/image/upload/c_fill,h_829,w_1376/v1584714452/new-portfolio-site/project-thumbnails/Screen_Shot_2020-03-20_at_21.58.52_gmhfhs.png" alt="" class="portfolio__img" />
+        <a
+          href="https://compassionate-dubinsky-cb7490.netlify.com/"
+          class="portfolio__item"
+        >
+          <img
+            src="https://res.cloudinary.com/dhbcdmcr2/image/upload/c_fill,h_829,w_1376/v1584714452/new-portfolio-site/project-thumbnails/Screen_Shot_2020-03-20_at_21.58.52_gmhfhs.png"
+            alt=""
+            class="portfolio__img"
+          />
         </a>
 
         <!-- Portfolio item 05: Github User Finder  -->
-        <a href="https://cranky-albattani-84b2ef.netlify.app" class="portfolio__item">
-          <img src="https://res.cloudinary.com/dhbcdmcr2/image/upload/v1593597009/new-portfolio-site/project-thumbnails/Screen_Shot_2020-07-01_at_12.20.13_q7zkay.png" alt="" class="portfolio__img" /> 
-        </a> 
+        <a
+          href="https://cranky-albattani-84b2ef.netlify.app"
+          class="portfolio__item"
+        >
+          <img
+            src="https://res.cloudinary.com/dhbcdmcr2/image/upload/v1593597009/new-portfolio-site/project-thumbnails/Screen_Shot_2020-07-01_at_12.20.13_q7zkay.png"
+            alt=""
+            class="portfolio__img"
+          />
+        </a>
         <!-- Portfolio item 06: Meal Finder -->
-        <a href="https://unruffled-haibt-fa5a1c.netlify.app/" class="portfolio__item">
-          <img src="https://res.cloudinary.com/dhbcdmcr2/image/upload/v1593595804/new-portfolio-site/project-thumbnails/Screen_Shot_2020-07-01_at_17.17.03_ittys8.png" alt="" class="portfolio__img" /> 
-        </a> 
-        <!-- Portfolio item 0 
-        <a href="#" class="portfolio__item">
-          <img src="img/portfolio-10.jpg" alt="" class="portfolio__img" /> 
-        </a> -->
+        <a
+          href="https://unruffled-haibt-fa5a1c.netlify.app/"
+          class="portfolio__item"
+        >
+          <img
+            src="https://res.cloudinary.com/dhbcdmcr2/image/upload/v1593595804/new-portfolio-site/project-thumbnails/Screen_Shot_2020-07-01_at_17.17.03_ittys8.png"
+            alt=""
+            class="portfolio__img"
+          />
+        </a>
       </div>
     </section>
 
     <!-- Footer -->
-    <footer class="footer">
+    <footer class="footer" id="contact">
       <!-- replace with your own email address -->
-      <h2 class="section__title--footer">Contact me</h2>
+      <h2 class="section__title--footer">Get In Touch</h2>
+      <!-- Contact Form -->
+    
+        
+      </form>
+      <!-- Social List -->
       <ul class="social-list">
         <li class="social-list__item">
           <a class="social-list__link" href="https://codepen.io/mch1080">
@@ -173,7 +242,10 @@
           </a>
         </li>
         <li class="social-list__item">
-          <a class="social-list__link" href="https://www.linkedin.com/in/mch1080/">
+          <a
+            class="social-list__link"
+            href="https://www.linkedin.com/in/mch1080/"
+          >
             <i class="fab fa-linkedin"></i>
           </a>
         </li>
