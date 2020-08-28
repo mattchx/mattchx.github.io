@@ -227,7 +227,7 @@ h3 {
   display: block;
   text-decoration: none;
   padding: 0.5rem;
-  color: white;
+  color: var(--clr-white);
   font-size: 1em;
   font-weight: 700;
 }
@@ -264,6 +264,7 @@ h3 {
 
 .dark-mode-toggle {
   margin-left: .5rem;
+  
 }
 
 /* MEDIA QUERY 500 */
@@ -295,10 +296,14 @@ h3 {
     position: absolute;
     top: 70px;
     right: 10px;
+    background: var(--clr-dark-to-light);
+    border-radius: 5px;
+    border: 1px solid var(--clr-white);
   }
 
   .navbar-links ul li a {
     padding: 0.5rem 1rem;
+    color: var(--clr-light-to-dark);
   }
 
   .navbar-links.active {
@@ -307,6 +312,11 @@ h3 {
 
   .dark-mode-toggle {
     margin-left: 0;
+    color:var(--clr-light-to-dark);
+  }
+
+  .dark-mode-toggle:hover {
+    color:var(--clr-yellow);
   }
 
 }
@@ -328,7 +338,7 @@ h3 {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 90vh;
+  height: 100vh;
 }
 
 .heading-primary-hello {
@@ -344,9 +354,11 @@ h3 {
   animation-fill-mode: backwards;
 }
 
-.animated-subtitle {
+
+.section-subtitle__intro {
   animation: moveInRight .6s ease-out 1.0s;
   animation-fill-mode: backwards;
+   text-align: center; 
 }
 
 @keyframes moveInRight {
@@ -368,6 +380,13 @@ h3 {
   100% {
     opacity: 1;
     transform: translateX(0);
+  }
+}
+
+@media (max-width: 500px) {
+  .intro{
+
+    text-align: center;
   }
 }
 
@@ -400,12 +419,6 @@ h3 {
 .btn.btn__about-portfolio {
   padding: .9em 3.9em;
 }
-
-/* .about-me__img.is-visible {
-  animation: moveInRight .8s ease-out 1.6s;
-  animation-fill-mode: backwards;
-  opacity: 1;
-} */
 
 @media (min-width: 600px) {
   .about-me__grid {
@@ -486,16 +499,34 @@ h3 {
     width: 100%;
     height: auto;
   }
+}
+
+@media (max-width: 500px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+    position: relative;
+  }
+
+  section {
+    padding: 2rem 1rem;
+  }
+  .skill-item {
+    margin-bottom: 1.5em;
+    padding: 2rem 1rem 1rem 1rem;
+  }
+  .skills-grid {
+    display: block;
+  }
+
 
 }
-/* 4 - call-to-action */
+
+/* 4 - CALL-TO-ACTION */
 .cta {
   background-color: var(--clr-main2);
-
 }
 .cta__container {
-  
-  
   color: var(--clr-light);
   /* text-align: center; */
   display: flex;
@@ -574,7 +605,16 @@ h3 {
     width: auto;
     height: auto;
   }
+}
 
+@media (max-width: 500px) {
+  .portfolio-grid {
+    display: block;
+  }
+  .portfolio-grid__item {
+    margin-bottom: 1.5em;
+    padding: 2rem 1rem 1rem 1rem;
+  }
 }
 
 /* FOOTER */
