@@ -338,30 +338,34 @@ h3 {
 
 .intro {
   width: 100%;
-  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-content: space-between;
+  margin: 0;
+  padding: 0;
+  height: 95vh
 }
 
 .intro__upper {
-  height: 30%;
+  height: 33%;
 }
 
-.intro__lower {
-  height: 70%;
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: space-between;
-  margin: 0;
-  padding: 0;
-}
 
-.title-container {
+
+.intro__mid {
   color: var(--clr-white);
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  height: 33%;
+}
+
+.intro__lower {
+  margin-top: 5rem;
+  padding: 0;
+  height: 33%;
+
 }
 
 
@@ -415,19 +419,13 @@ h3 {
     height: 90vh
   }
 
-  .intro__lower {
+  /* .intro__lower {
     height: 50%;
     width: 100%;
-  }
+  } */
 }
 
 /* WAVES STYLING */
-
-.waves-container{ 
-  margin-top: 5rem;
-  padding: 0;
-  
-}
 
 .waves {
   position:relative;
@@ -467,14 +465,14 @@ h3 {
   }
 }
 /*Shrinking for mobile*/
-/* @media (max-width: 768px) {
+@media (max-width: 768px) {
   .waves {
     height:4rem;
     min-height:3rem;
     width: 100%;
   }
 
-} */
+}
 
 
 /* **********************************2) ABOUT ME************************************ */
