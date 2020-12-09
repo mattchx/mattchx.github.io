@@ -68,9 +68,13 @@ body {
   line-height: 1.6;
 }
 
-section {
+/* section {
   padding: 5em 2em;
-}
+} 
+
+ section .intro  {
+  padding: 0;
+ } */
 
 img {
   display: block;
@@ -330,16 +334,36 @@ h3 {
   }
 }
 
-/*  1) INTRO SECTION  */
+/*  ****************************1) INTRO SECTION*********************************  */
 
 .intro {
+  width: 100%;
+  height: 100vh;
+}
+
+.intro__upper {
+  height: 30%;
+}
+
+.intro__lower {
+  height: 70%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: space-between;
+  margin: 0;
+  padding: 0;
+}
+
+.title-container {
   color: var(--clr-white);
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 100vh;
 }
+
 
 .heading-primary-hello {
   /* animation: name duration timing-function delay */
@@ -384,15 +408,79 @@ h3 {
 }
 
 @media (max-width: 500px) {
-  .intro{
-
+  .intro {
+    width: 100%;
     text-align: center;
+    padding: 0;
+    height: 90vh
+  }
+
+  .intro__lower {
+    height: 50%;
+    width: 100%;
   }
 }
 
-/* 2) ABOUT ME */
+/* WAVES STYLING */
+
+.waves-container{ 
+  margin-top: 5rem;
+  padding: 0;
+  
+}
+
+.waves {
+  position:relative;
+  width: 100%;
+  min-height:6.25rem;
+  max-height:9.375rem;
+  
+}
+
+/* Animation */
+
+.parallax > use {
+  animation: move-forever 25s cubic-bezier(.55,.5,.45,.5)     infinite;
+}
+.parallax > use:nth-child(1) {
+  animation-delay: -2s;
+  animation-duration: 7s;
+}
+.parallax > use:nth-child(2) {
+  animation-delay: -3s;
+  animation-duration: 10s;
+}
+.parallax > use:nth-child(3) {
+  animation-delay: -4s;
+  animation-duration: 13s;
+}
+.parallax > use:nth-child(4) {
+  animation-delay: -5s;
+  animation-duration: 20s;
+}
+@keyframes move-forever {
+  0% {
+   transform: translate3d(-90px,0,0);
+  }
+  100% { 
+    transform: translate3d(85px,0,0);
+  }
+}
+/*Shrinking for mobile*/
+/* @media (max-width: 768px) {
+  .waves {
+    height:4rem;
+    min-height:3rem;
+    width: 100%;
+  }
+
+} */
+
+
+/* **********************************2) ABOUT ME************************************ */
 .about-me {
   background: var(--clr-main2);
+  padding: 5em 2em;
   
 }
 .about-me__grid{
@@ -453,13 +541,14 @@ h3 {
 
 }
 
-/* 3) SKILLS */
+/* ******************************3) SKILLS***************************************** */
 
 .skills {
   /* background-color: var(--clr-main2); */
   margin: 0 auto;
   color: var(--clr-light);
   max-width: 1050px;
+  padding: 5em 2em;
 }
 
 .skills-grid {
@@ -522,9 +611,10 @@ h3 {
 
 }
 
-/* 4 - CALL-TO-ACTION */
+/*  ****************************4 - CALL-TO-ACTION ******************************* */
 .cta {
   background-color: var(--clr-main2);
+  padding: 5em 2em;
 }
 .cta__container {
   color: var(--clr-light);
@@ -541,7 +631,7 @@ h3 {
 }
 
 
-/* 5 - PORTFOLIO */
+/* ***************************** 5 - PORTFOLIO ***************************** */
 
 .my-work {
   /* background-color: var(--clr-main2); */
@@ -549,7 +639,7 @@ h3 {
   margin: 0 auto;
   color: var(--clr-light);
   max-width: 1050px;
-
+  padding: 5em 2em;
 }
 
 .portfolio-grid {
@@ -617,7 +707,7 @@ h3 {
   }
 }
 
-/* FOOTER */
+/* ********************************* CONTACT ************************************ */
 
 .footer {
   background-color: var(--clr-main2);
@@ -638,12 +728,6 @@ h3 {
 .section__title--footer {
   font-size: 1.2em;
 }
-
-/* .section__title--footer:hover {
-  color: var(--clr-yellow);
-  cursor: pointer;
-  border-radius: 100px;
-} */
 
 /* SOCIAL LIST */
 .social-list {
@@ -672,3 +756,5 @@ h3 {
   text-align: center;
   background: var(--clr-main2);
 }
+
+

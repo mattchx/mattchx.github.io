@@ -42,16 +42,59 @@
 
     <!-- INTRO -->
     <section class="intro" id="home">
+      <div class="intro__upper"></div>
+      <div class="intro__lower">
+        <div class="title-container">
       <div class="section__title heading-primary">
         <h2 class="heading-primary-hello">Hi, I am</h2>
         <h2 class="heading-primary-name">Matthew C Henderson</h2>
       </div>
-      <h1 class="section-subtitle__intro">
-        I build things for the web
-      </h1>
+      <h1 class="section-subtitle__intro">I build things for the web</h1>
       <div class="btn-container">
         <a href="#about" class="btn btn-dark btn-animated">Learn more</a>
       </div>
+    </div>
+      <!--Waves Container-->
+      <div class="waves-container">
+        <svg
+          class="waves"
+          xmlns="http://www.w3.org/2000/svg"
+          xmlns:xlink="http://www.w3.org/1999/xlink"
+          viewBox="0 24 150 28"
+          preserveAspectRatio="none"
+          shape-rendering="auto"
+        >
+          <defs>
+            <path
+              id="gentle-wave"
+              d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z"
+            />
+          </defs>
+          <g class="parallax">
+            <use
+              xlink:href="#gentle-wave"
+              x="48"
+              y="0"
+              fill="rgba(255,255,255,0.7"
+            />
+            <use
+              xlink:href="#gentle-wave"
+              x="48"
+              y="3"
+              fill="rgba(255,255,255,0.5)"
+            />
+            <use
+              xlink:href="#gentle-wave"
+              x="48"
+              y="5"
+              fill="rgba(255,255,255,0.3)"
+            />
+            <use xlink:href="#gentle-wave" x="48" y="7" fill="#fff" />
+          </g>
+        </svg>
+      </div>
+      <!--Waves end-->
+    </div>
     </section>
 
     <!-- ABOUT -->
@@ -63,9 +106,7 @@
           class="about-me__img"
         />
 
-        <h3 class="section__title section__title--about">
-          Who I am
-        </h3>
+        <h3 class="section__title section__title--about">Who I am</h3>
         <h2>I'm a Full Stack Web Developer</h2>
 
         <div class="about-me__body">
@@ -101,10 +142,16 @@
       <div class="skills-grid">
         <!-- JAVASCRIPT -->
         <div class="skill-item">
-          <img class="skill-img" src="https://res.cloudinary.com/dhbcdmcr2/image/upload/v1597502867/new-portfolio-site/javascript-logo1_g9nza3.png" alt="" />
+          <img
+            class="skill-img"
+            src="https://res.cloudinary.com/dhbcdmcr2/image/upload/v1597502867/new-portfolio-site/javascript-logo1_g9nza3.png"
+            alt=""
+          />
           <h3>Javascript</h3>
           <p>
-            The power of Javascript brings websites to life! I use Javascript to build attractive, lightweight, and responsive frontends for websites. Check out work to see Javacript in action!
+            The power of Javascript brings websites to life! I use Javascript to
+            build attractive, lightweight, and responsive frontends for
+            websites. Check out work to see Javacript in action!
           </p>
         </div>
         <div class="skill-item">
@@ -115,9 +162,9 @@
           />
           <h3>React</h3>
           <p>
-            React is JavaScript library and currently the best choice to create easy to use interactive user interfaces (UIs). The
-            benefits of React include great performance, testability, and
-            reusability.
+            React is JavaScript library and currently the best choice to create
+            easy to use interactive user interfaces (UIs). The benefits of React
+            include great performance, testability, and reusability.
           </p>
         </div>
         <!-- HTML & CSS -->
@@ -129,7 +176,9 @@
           />
           <h3>HTML + CSS</h3>
           <p>
-            Developing  websites starts basics of HTML5, an integible part of all my projects. Also, the importance of good CSS styling can not be underestimated. CSS not only adds style but also function.
+            Developing websites starts basics of HTML5, an integible part of all
+            my projects. Also, the importance of good CSS styling can not be
+            underestimated. CSS not only adds style but also function.
           </p>
         </div>
         <!-- C# -->
@@ -141,7 +190,9 @@
           />
           <h3>C# Language</h3>
           <p>
-            C# is a modern programming language that is incredibly powerful and blazing fast. Combined with the ASP.NET framework, C# can build cross-platform web apps and services.
+            C# is a modern programming language that is incredibly powerful and
+            blazing fast. Combined with the ASP.NET framework, C# can build
+            cross-platform web apps and services.
           </p>
         </div>
       </div>
@@ -180,7 +231,11 @@
       <div class="portfolio-grid">
         <!-- Issue Tracker Plus-->
         <div class="portfolio-grid__item">
-          <img src="https://res.cloudinary.com/dhbcdmcr2/image/upload/c_scale,h_857,q_89/v1597502869/new-portfolio-site/issue-tracker-plus-sd_vll4yx.jpg" alt="" class="portfolio__img" />
+          <img
+            src="https://res.cloudinary.com/dhbcdmcr2/image/upload/c_scale,h_857,q_89/v1597502869/new-portfolio-site/issue-tracker-plus-sd_vll4yx.jpg"
+            alt=""
+            class="portfolio__img"
+          />
           <div class="mt">
             <h3 class="mb">Issue Tracker Plus+</h3>
             <a
@@ -200,7 +255,11 @@
 
         <!-- Meal Finder -->
         <div class="portfolio-grid__item">
-          <img src="https://res.cloudinary.com/dhbcdmcr2/image/upload/c_scale,h_832,q_91/v1597502865/new-portfolio-site/meal-finder-sd_kti4fi.jpg" alt="" class="portfolio__img" />
+          <img
+            src="https://res.cloudinary.com/dhbcdmcr2/image/upload/c_scale,h_832,q_91/v1597502865/new-portfolio-site/meal-finder-sd_kti4fi.jpg"
+            alt=""
+            class="portfolio__img"
+          />
           <div class="mt">
             <h3 class="mb">Meal Finder</h3>
             <a
@@ -219,7 +278,11 @@
         </div>
         <!--Expense Book -->
         <div class="portfolio-grid__item">
-          <img src="https://res.cloudinary.com/dhbcdmcr2/image/upload/c_scale,h_838,q_86/v1597502874/new-portfolio-site/expense-book-sd_gqiehq.jpg" alt="" class="portfolio__img" />
+          <img
+            src="https://res.cloudinary.com/dhbcdmcr2/image/upload/c_scale,h_838,q_86/v1597502874/new-portfolio-site/expense-book-sd_gqiehq.jpg"
+            alt=""
+            class="portfolio__img"
+          />
           <div class="mt">
             <h3 class="mb">Expense Book</h3>
             <a
