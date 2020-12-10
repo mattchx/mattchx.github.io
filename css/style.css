@@ -9,15 +9,16 @@
 /* Custom Properties */
 
 :root {
-  --ff-primary: 'Source Sans Pro', sans-serif;
+  --ff-primary: 'Encode Sans', sans-serif;
   --ff-secondary: 'Source Code Pro', monospace;
 
   --fw-reg: 300;
   --fw-bold: 900;
 
-  --clr-main1: #162447;
+  --clr-main1:  linear-gradient(to right top,#0d1732 30%,#13394d 70% ,#020f39 90%);
   --clr-main2: #0a1122;
 
+  /* 13394d */
   --clr-red: #d45166;
   --clr-blue: #1f4068;
   --clr-lightblue: #a8d0e6;
@@ -36,7 +37,7 @@
 
 /* DARK MODE CLASS */
 .darkmode {
-  --clr-main1: #8596c1;
+  --clr-main1: linear-gradient(60deg, rgba(84,58,183,1) 0%, rgba(0,172,193,1) 100%);
   --clr-main2: #59688c;
 
   --clr-dark-to-light: #f3feff;
@@ -349,8 +350,6 @@ h3 {
 .intro__upper {
   height: 33%;
 }
-
-
 
 .intro__mid {
   color: var(--clr-white);
