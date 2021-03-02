@@ -1,5 +1,5 @@
 # Portfolio Site
-This is site is live @ https://mattchx.com/ 
+This site is live @ https://mattchx.com/ 
 
 Feel feel to clone this repo and edit this portfolio to make it your own!
 I'm currently hosting my site using [Github Pages](https://pages.github.com/).
