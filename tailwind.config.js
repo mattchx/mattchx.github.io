@@ -2,7 +2,16 @@
 module.exports = {
   content: ["./*.{html,js}"],
   theme: {
-    extend: {},
+    extend: {
+      animation: {
+        'gradient': 'gradient 8s linear infinite',
+      },
+      keyframes: {
+        'gradient': {
+          to: { 'background-position': '200% center' },
+        }
+      }                    
+    },
   },
   plugins: [require("@tailwindcss/typography"), require("daisyui")],
   daisyui: {
