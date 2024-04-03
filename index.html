@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<html lang="en" >
+<html class="scroll-smooth" lang="dark">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="/dist/main.css" rel="stylesheet">
-    <title>Document</title>
+    <title>Matt's Dev Site</title>
 </head>
 
 <div class="flex flex-col min-h-[100dvh]">
@@ -15,42 +15,45 @@
                 <p class="text text-white p-4 text-2xl font-bold ">Matt's Dev Site</p>
             </div>
 
-            <h1 class="text-4xl md:text-6xl font-extrabold pb-5 bg-clip-text text-transparent bg-[linear-gradient(to_right,theme(colors.indigo.400),theme(colors.indigo.100),theme(colors.sky.400),theme(colors.fuchsia.400),theme(colors.sky.400),theme(colors.indigo.100),theme(colors.indigo.400))] bg-[length:200%_auto] animate-gradient">
+            <h1
+                class="text-4xl md:text-6xl font-extrabold pb-5 bg-clip-text text-transparent bg-[linear-gradient(to_right,theme(colors.indigo.400),theme(colors.indigo.100),theme(colors.sky.400),theme(colors.fuchsia.400),theme(colors.sky.400),theme(colors.indigo.100),theme(colors.indigo.400))] bg-[length:200%_auto] animate-gradient">
                 Welcome to my corner of
                 the internet</h1>
         </div>
-        <nav class="flex justify-center gap-8">
-            <a class="text-2xl p-3 rounded hover:bg-gradient-to-r hover:from-gray-200 hover:to-gray-100 hover:shadow-lg active:shadow-2xl hover:text-black" href="#project-section">About</a>
-            <a class="text-2xl p-3 rounded hover:bg-gradient-to-r hover:from-gray-200 hover:to-gray-100 hover:shadow-lg active:shadow-2xl hover:text-black" href="#project-section">Projects</a>
-            <a class="text-2xl p-3 rounded hover:bg-gradient-to-r hover:from-gray-200 hover:to-gray-100 hover:shadow-lg active:shadow-2xl hover:text-black" href="#tech-section">Tech</a>
-            <a class="text-2xl p-3 rounded hover:bg-gradient-to-r hover:from-gray-200 hover:to-gray-100 hover:shadow-lg active:shadow-2xl hover:text-black" href="#">Contact</a>
+        <nav class="flex justify-center gap-0 md:gap-4 lg:gap-8 flex-col md:flex-row">
+            <a class="text-2xl p-3 rounded hover:bg-gradient-to-r hover:from-gray-200 hover:to-gray-100 hover:shadow-lg active:shadow-2xl hover:text-black"
+                href="#about-me">About</a>
+            <a class="text-2xl p-3 rounded hover:bg-gradient-to-r hover:from-gray-200 hover:to-gray-100 hover:shadow-lg active:shadow-2xl hover:text-black"
+                href="#projects">Projects</a>
+            <a class="text-2xl p-3 rounded hover:bg-gradient-to-r hover:from-gray-200 hover:to-gray-100 hover:shadow-lg active:shadow-2xl hover:text-black"
+                href="#tech">Tech</a>
+            <a class="text-2xl p-3 rounded hover:bg-gradient-to-r hover:from-gray-200 hover:to-gray-100 hover:shadow-lg active:shadow-2xl hover:text-black"
+                href="#contact">Contact</a>
         </nav>
     </header>
     <main class="flex-1">
-        <section class="w-full py-12 md:py-24 lg:py-32 border-t border-gray-100">
-            <div class="flex items-center justify-center px-4">
-            <div class="card shadow-md hover:shadow-2xl p-10 flex flex-col md:flex-row"> 
-                <div class="mr-10">
-                    <img class="rounded-full max-w-60" src="assets/profile-small.jpg" alt="Matt" />
-                </div>
-                <div>
-                    <h2 class="text-3xl font-bold tracking-tighter md:text-4xl/tight">About Me</h2>
+        <section id="about-me" class="w-full py-12 md:py-24 lg:py-32 border-t border-gray-100">
+            <div class="flex flex-col items-center justify-center px-4">
+                <h2 class="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl mb-10">About Me</h2>
+
+                <div class="card shadow-md hover:shadow-2xl p-10 flex flex-col md:flex-row items-center">
+                    <div class="mr-10">
+                        <img class="rounded-full max-w-60" src="assets/profile-small.jpg" alt="Matt" />
+                    </div>
                     <p
                         class="mx-auto max-w-lg text-gray-500 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed dark:text-gray-400">
-                        I'm Matthew Henderson, a full stack developer skilled in React, Node.js, GoLang, PostgreSQL, and Tailwind CSS. Passionate about crafting efficient, user-friendly applications and eager to contribute to meaningful projects. Let's build something remarkable together!                    </p>
-                </div>
+                        I'm Matthew Henderson, a full stack developer skilled in React, Node.js, GoLang, PostgreSQL,
+                        and Tailwind CSS. Passionate about crafting efficient, user-friendly applications and eager
+                        to contribute to meaningful projects. Let's build something remarkable together! </p>
+
                 </div>
             </div>
         </section>
 
-        <section class="w-full py-12 md:py-24 lg:py-32 border-t border-gray-100">
+        <section id="projects" class="w-full py-12 md:py-24 lg:py-32 border-t border-gray-100">
             <div class="px-4 grid items-center justify-center gap-4 text-center md:px-6">
                 <div class="space-y-3">
-                    <h2 class="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">Projects</h2>
-                    <p
-                        class="mx-auto max-w-[700px] text-gray-500 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed dark:text-gray-400">
-                        Here are some of my recent projects. Click on the images to see more details.
-                    </p>
+                    <h2 class="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl mb-10">Projects</h2>
                 </div>
                 <div class="grid grid-cols-1 gap-4 md:grid-cols-2 lg:gap-6 max-w-6xl">
                     <div class="card card-bordered shadow-md hover:shadow-xl dark:hover:shadow-2xl dark:text-white">
@@ -58,34 +61,34 @@
                         <div class="bg-accent"></div>
                         <div class="card-body">
                             <h2 class="card-title text-2xl">Issue Tracker</h2>
-                            <p class="text-left">Track, delete and update issues</p>
+                            <p class="text-left">Track, delete and update issues.</p>
                             <div class="card-actions ">
-                                <a class="btn btn-outline w-1/4 dark:text-white">Repo</a>
-                                <a class="btn btn-neutral w-1/4" >Live</a>
+                                <a href="https://github.com/mattchx/vending-machine"
+                                    class="btn btn-outline w-full dark:text-white">View</a>
                             </div>
                         </div>
                     </div>
                     <div class="card card-bordered shadow-md hover:shadow-xl dark:hover:shadow-2xl dark:text-white">
-                        <figure><img class="" src="assets/money-app.png" alt="issue tracker preview" /></figure>
+                        <figure class="mb-3"><img class="" src="assets/money-app.png" alt="issue tracker preview" /></figure>
                         <div class="bg-accent"></div>
                         <div class="card-body text-center pt-0">
                             <h2 class="card-title text-2xl text-center">My Money App</h2>
-                            <p class="text-left">Manage daily tasks, delete and add new tasks</p>
+                            <p class="text-left"></p>
                             <div class="card-actions">
-                                <a class="btn btn-outline w-1/4 dark:text-white">Repo</a>
-                                <a class="btn btn-neutral w-1/4" >Live</a>
+                                <a href="https://github.com/mattchx/vending-machine"
+                                class="btn btn-outline w-full dark:text-white">View</a>
                             </div>
                         </div>
                     </div>
                     <div class="card card-bordered shadow-md hover:shadow-xl dark:hover:shadow-2xl dark:text-white">
-                        <figure><img class="" src="assets/vending-machine.png" alt="issue tracker preview" /></figure>
+                        <figure class="mb-2" ><img class="" src="assets/vending-machine.png" alt="issue tracker preview" /></figure>
                         <div class="bg-accent"></div>
                         <div class="card-body text-center pt-0">
                             <h2 class="card-title text-2xl text-center">Vending Machine</h2>
-                            <p class="text-left">Manage daily tasks, delete and add new tasks</p>
+                            <p class="text-left">Manages inventory and issues change based on cash provided.</p>
                             <div class="card-actions">
-                                <a class="btn btn-outline w-1/4 dark:text-white">Repo</a>
-                                <a class="btn btn-neutral w-1/4" >Live</a>
+                                <a href="https://github.com/mattchx/vending-machine"
+                                class="btn btn-outline w-full dark:text-white">View</a>
                             </div>
                         </div>
                     </div>
@@ -94,19 +97,18 @@
                         <div class="bg-accent"></div>
                         <div class="card-body text-center">
                             <h2 class="card-title text-2xl text-center">Daily Task Manager</h2>
-                            <p class="text-left">Manage daily tasks, delete and add new tasks</p>
+                            <p class="text-left">Full stack project with functional SQL database</p>
                             <div class="card-actions">
-                                <a class="btn btn-outline w-1/4 dark:text-white">Repo</a>
-                                <a class="btn btn-neutral w-1/4" >Live</a>
+                                <a href="https://github.com/mattchx/vending-machine"
+                                class="btn btn-outline w-full dark:text-white">View</a>
                             </div>
                         </div>
                     </div>
-                    
+
                 </div>
             </div>
         </section>
-        <section class="w-full py-12 md:py-24 lg:py-32 border-t border-gray-100">
-
+        <section id="tech" class="w-full py-12 md:py-24 lg:py-32 border-t border-gray-100">
             <h2 class="text-center text-3xl font-bold tracking-tighter md:text-4xl/tight">Tech</h2>
             <div class="flex justify-center align-center">
                 <div class="max-w-6xl items-center py-12 px-4 grid-cols-2 lg:grid-cols-4 gap-4 grid">
@@ -150,29 +152,33 @@
             </div>
         </section>
 
-        <section class="w-full py-12 md:py-24 lg:py-32 border-t border-gray-100">
+        <section id="contact" class="w-full py-12 md:py-24 lg:py-32 border-t border-gray-100">
             <div class="grid items-center gap-4 px-4 text-center md:px-6">
                 <div class="space-y-3">
                     <h2 class="text-3xl font-bold tracking-tighter md:text-4xl/tight">Contact Me</h2>
                 </div>
                 <p
                     class="mx-auto max-w-[700px] text-gray-500 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed dark:text-gray-400">
-                    Want to get in touch? You can reach me at the following
-                    email: example@example.com
+                    Interested in working with me?
+                    <br />
+                    Reach me via email at: <a class="link text-black dark:text-white"> mattcharlesh@gmail.com</a>
                 </p>
+                <p
+                    class="mx-auto max-w-[700px] text-gray-500 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed dark:text-gray-400">
+                    Or find me on:</p>
+                <div class="flex justify-center gap-4">
+                    <a href="https://github.com/mattchx"><img class="h-10 dark:bg-white dark:border dark:rounded-full"
+                            src="assets/svg/github.svg" alt="github logo"></a>
+                    <a href="https://www.linkedin.com/in/mattchx/"><img
+                            class="h-10 dark:bg-white dark:border dark:rounded" src="assets/svg/linkedin.svg"
+                            alt="linkedin logo"></a>
+                </div>
             </div>
         </section>
     </main>
     <footer class="flex flex-col gap-2 sm:flex-row py-6 w-full shrink-0 items-center px-4 md:px-6 border-t">
-        <p class="text-xs text-gray-500 dark:text-gray-400">© 2024 Acme Inc. All rights reserved.</p>
-        <nav class="sm:ml-auto flex gap-4 sm:gap-6">
-            <a class="text-xs hover:underline underline-offset-4" href="#">
-                Terms of Service
-            </a>
-            <a class="text-xs hover:underline underline-offset-4" href="#">
-                Privacy
-            </a>
-        </nav>
+        <p class="text-xs text-gray-500 dark:text-gray-400">Built in London, Ontario with Tailwind CSS and daisyUI ✌️
+        </p>
     </footer>
 </div>
 
