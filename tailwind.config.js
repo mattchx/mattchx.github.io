@@ -10,10 +10,10 @@ module.exports = {
         'gradient': {
           to: { 'background-position': '200% center' },
         }
-      }                    
+      }
     },
   },
-  plugins: [require("@tailwindcss/typography"), require("daisyui")],
+  plugins: [require("daisyui")],
   daisyui: {
     themes: ["light", "dark", "retro", "corporate", "synthwave", "cyberpunk"],
   },
