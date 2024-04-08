@@ -1,7 +1,7 @@
 {
   "scripts": {
-    "build": "postcss main.css -o dist/main.css",
-    "watch": "postcss main.css -o dist/main.css --watch"
+    "build": "postcss main.css -o dist.css",
+    "watch": "postcss main.css -o dist.css --watch"
   },
   "devDependencies": {
     "autoprefixer": "^10.4.19",
